@@ -1,0 +1,596 @@
+// Datos CSV completos del horario de cursos
+// Este archivo contiene los datos hardcodeados del CSV para evitar problemas con importaciones
+
+export const csvRawText = `Semestre,Día,num_de_hora,Hora_Inicio,Hora_Fin,Curso
+
+10,Lunes,1,08:00 am,08:50 am,libre
+10,Lunes,2,08:50 am,09:40 am,Automatizacion de Procesos
+10,Lunes,3,09:40 am,10:30 am,Automatizacion de Procesos
+10,Lunes,4,10:30 am,11:20 am,Automatizacion de Procesos
+10,Lunes,5,11:20 am,12:10 pm,Auditoria de Tecnologias de la Informacion
+10,Lunes,6,12:10 pm,13:00 pm,Auditoria de Tecnologias de la Informacion
+10,Lunes,7,13:00 pm,13:50 pm,libre
+10,Lunes,8,14:30 pm,15:20 pm,libre
+10,Lunes,9,15:20 pm,16:10 pm,libre
+10,Lunes,10,16:10 pm,17:00 pm,libre
+10,Martes,1,08:00 am,08:50 am,Automatizacion de Procesos
+10,Martes,2,08:50 am,09:40 am,Automatizacion de Procesos
+10,Martes,3,09:40 am,10:30 am,Automatizacion de Procesos
+10,Martes,4,10:30 am,11:20 am,Emprendimiento
+10,Martes,5,11:20 am,12:10 pm,Emprendimiento
+10,Martes,6,12:10 pm,13:00 pm,Emprendimiento
+10,Martes,7,13:00 pm,13:50 pm,libre
+10,Martes,8,14:30 pm,15:20 pm,Derecho Informatico
+10,Martes,9,15:20 pm,16:10 pm,Derecho Informatico
+10,Martes,10,16:10 pm,17:00 pm,libre
+10,Miércoles,1,08:00 am,08:50 am,Trabajo de Investigación
+10,Miércoles,2,08:50 am,09:40 am,Trabajo de Investigación
+10,Miércoles,3,09:40 am,10:30 am,Trabajo de Investigación
+10,Miércoles,4,10:30 am,11:20 am,Emprendimiento
+10,Miércoles,5,11:20 am,12:10 pm,Emprendimiento
+10,Miércoles,6,12:10 pm,13:00 pm,libre
+10,Miércoles,7,13:00 pm,13:50 pm,libre
+10,Miércoles,8,14:30 pm,15:20 pm,libre
+10,Miércoles,9,15:20 pm,16:10 pm,libre
+10,Miércoles,10,16:10 pm,17:00 pm,libre
+10,Jueves,1,08:00 am,08:50 am,Trabajo de Investigación
+10,Jueves,2,08:50 am,09:40 am,Trabajo de Investigación
+10,Jueves,3,09:40 am,10:30 am,Practicas Pre profesionales II
+10,Jueves,4,10:30 am,11:20 am,Practicas Pre profesionales II
+10,Jueves,5,11:20 am,12:10 pm,Practicas Pre profesionales II
+10,Jueves,6,12:10 pm,13:00 pm,Practicas Pre profesionales II
+10,Jueves,7,13:00 pm,13:50 pm,libre
+10,Jueves,8,14:30 pm,15:20 pm,Mineria de Datos
+10,Jueves,9,15:20 pm,16:10 pm,Mineria de Datos
+10,Jueves,10,16:10 pm,17:00 pm,libre
+10,Viernes,1,08:00 am,08:50 am,Mineria de Datos
+10,Viernes,2,08:50 am,09:40 am,Mineria de Datos
+10,Viernes,3,09:40 am,10:30 am,Mineria de Datos
+10,Viernes,4,10:30 am,11:20 am,Derecho Informatico
+10,Viernes,5,11:20 am,12:10 pm,Derecho Informatico
+10,Viernes,6,12:10 pm,13:00 pm,Derecho Informatico
+10,Viernes,7,13:00 pm,13:50 pm,libre
+10,Viernes,8,14:30 pm,15:20 pm,Auditoria de Tecnologias de la Informacion
+10,Viernes,9,15:20 pm,16:10 pm,Auditoria de Tecnologias de la Informacion
+10,Viernes,10,16:10 pm,17:00 pm,Auditoria de Tecnologias de la Información
+
+9,Lunes,1,08:00 am,08:50 am,Despliegue de Aplicaciones Web
+9,Lunes,2,08:50 am,09:40 am,Despliegue de Aplicaciones Web
+9,Lunes,3,09:40 am,10:30 am,Despliegue de Aplicaciones Web
+9,Lunes,4,10:30 am,11:20 am,Despliegue de Aplicaciones Web
+9,Lunes,5,11:20 am,12:10 pm,Virtualizacion y Servicios en Cloud
+9,Lunes,6,12:10 pm,13:00 pm,Virtualizacion y Servicios en Cloud
+9,Lunes,7,13:00 pm,13:50 pm,libre
+9,Lunes,8,14:30 pm,15:20 pm,Administracion de Tecnologias de la Informacion
+9,Lunes,9,15:20 pm,16:10 pm,Administracion de Tecnologias de la Informacion
+9,Lunes,10,16:10 pm,17:00 pm,Administracion de Tecnologias de la Informacion
+9,Martes,1,08:00 am,08:50 am,Seminario de Tesis II
+9,Martes,2,08:50 am,09:40 am,Seminario de Tesis II
+9,Martes,3,09:40 am,10:30 am,Seminario de Tesis II
+9,Martes,4,10:30 am,11:20 am,Rediseño de Procesos
+9,Martes,5,11:20 am,12:10 pm,Rediseño de Procesos
+9,Martes,6,12:10 pm,13:00 pm,Rediseño de Procesos
+9,Martes,7,13:00 pm,13:50 pm,libre
+9,Martes,8,14:30 pm,15:20 pm,libre
+9,Martes,9,15:20 pm,16:10 pm,Despliegue de Aplicaciones Web
+9,Martes,10,16:10 pm,17:00 pm,Sistemas Expertos
+9,Martes,11,17:00 pm,17:50 pm,Sistemas Expertos
+9,Miércoles,1,08:00 am,08:50 am,Practicas Pre Profesionales I
+9,Miércoles,2,08:50 am,09:40 am,Practicas Pre Profesionales I
+9,Miércoles,3,09:40 am,10:30 am,Practicas Pre Profesionales I
+9,Miércoles,4,10:30 am,11:20 am,Practicas Pre Profesionales I
+9,Miércoles,5,11:20 am,12:10 pm,Seminario de Tesis II
+9,Miércoles,6,12:10 pm,13:00 pm,Seminario de Tesis II
+9,Miércoles,7,13:00 pm,13:50 pm,libre
+9,Miércoles,8,14:30 pm,15:20 pm,libre
+9,Miércoles,9,15:20 pm,16:10 pm,libre
+9,Miércoles,10,16:10 pm,17:00 pm,libre
+9,Miércoles,11,17:00 pm,17:50 pm,libre
+9,Miércoles,12,17:50 pm,18:40 pm,libre
+9,Jueves,1,08:00 am,08:50 am,Rediseño de Procesos
+9,Jueves,2,08:50 am,09:40 am,Rediseño de Procesos
+9,Jueves,3,09:40 am,10:30 am,Sistemas Expertos
+9,Jueves,4,10:30 am,11:20 am,Sistemas Expertos
+9,Jueves,5,11:20 am,12:10 pm,Sistemas Expertos
+9,Jueves,6,12:10 pm,13:00 pm,Sistemas Expertos
+9,Jueves,7,13:00 pm,13:50 pm,libre
+9,Jueves,8,14:30 pm,15:20 pm,Virtualizacion y Servicios en Cloud
+9,Jueves,9,15:20 pm,16:10 pm,Desarrollo de Soluciones II
+9,Jueves,10,16:10 pm,17:00 pm,Desarrollo de Soluciones II
+9,Lunes,11,17:00 pm,17:50 pm,Administracion de Tecnologias de la Informacion
+9,Lunes,12,17:50 pm,18:40 pm,Administracion de Tecnologias de la Informacion
+9,Viernes,1,08:00 am,08:50 am,Topicos de Ingenieria de Sistemas II
+9,Viernes,2,08:50 am,09:40 am,Topicos de Ingenieria de Sistemas II
+9,Viernes,3,09:40 am,10:30 am,Topicos de Ingenieria de Sistemas II
+9,Viernes,4,10:30 am,11:20 am,Topicos de Ingenieria de Sistemas II
+9,Viernes,5,11:20 am,12:10 pm,Desarrollo de Soluciones II
+9,Viernes,6,12:10 pm,13:00 pm,Desarrollo de Soluciones II
+9,Viernes,7,13:00 pm,13:50 pm,libre
+9,Viernes,8,14:30 pm,15:20 pm,libre
+
+
+8,Lunes,1,08:00 am,08:50 am,Desarrollo de Soluciones I
+8,Lunes,2,08:50 am,09:40 am,Desarrollo de Soluciones I
+8,Lunes,3,09:40 am,10:30 am,Desarrollo de Soluciones I
+8,Lunes,4,10:30 am,11:20 am,Sistema de Informacion Gerencial
+8,Lunes,5,11:20 am,12:10 pm,Sistema de Informacion Gerencial
+8,Lunes,6,12:10 pm,13:00 pm,Sistema de Informacion Gerencial
+8,Lunes,7,13:00 pm,13:50 pm,libre
+8,Lunes,8,14:30 pm,15:20 pm,Topicos de Ingenieria de Sistemas I
+8,Lunes,9,15:20 pm,16:10 pm,Topicos de Ingenieria de Sistemas I
+8,Lunes,10,16:10 pm,17:00 pm,Redes de Computadoras II
+8,Lunes,11,17:00 pm,17:50 pm,Redes de Computadoras II
+8,Lunes,12,17:50 pm,18:40 pm,Redes de Computadoras II
+8,Martes,1,08:00 am,08:50 am,Redes de Computadoras II
+8,Martes,2,08:50 am,09:40 am,Redes de Computadoras II
+8,Martes,3,09:40 am,10:30 am,Redes de Computadoras II
+8,Martes,4,10:30 am,11:20 am,Seminario de Tesis I
+8,Martes,5,11:20 am,12:10 pm,Seminario de Tesis I
+8,Martes,6,12:10 pm,13:00 pm,Seminario de Tesis I
+8,Martes,7,13:00 pm,13:50 pm,libre
+8,Martes,8,14:30 pm,15:20 pm,Gestion de Proyectos
+8,Martes,9,15:20 pm,16:10 pm,Gestion de Proyectos
+8,Martes,10,16:10 pm,17:00 pm,Sistema de Informacion Gerencial
+8,Martes,11,17:00 pm,17:50 pm,Sistema de Informacion Gerencial
+8,Martes,12,17:50 pm,18:40 pm,Sistema de Informacion Gerencial
+8,Martes,13,18:40 pm,19:30 pm,Topicos de Ingenieria de Sistemas I
+8,Martes,14,19:30 pm,20:20 pm,Topicos de Ingenieria de Sistemas I
+8,Miércoles,1,08:00 am,08:50 am,Seminario de Tesis I
+8,Miércoles,2,08:50 am,09:40 am,Seminario de Tesis I
+8,Miércoles,3,09:40 am,10:30 am,Administracion de Servidores
+8,Miércoles,4,10:30 am,11:20 am,Administracion de Servidores
+8,Miércoles,5,11:20 am,12:10 pm,Seminario de Tesis I
+8,Miércoles,6,12:10 pm,13:00 pm,Seminario de Tesis I
+8,Miércoles,7,13:00 pm,13:50 pm,Mercadotecnia
+8,Miércoles,8,14:30 pm,15:20 pm,Mercadotecnia
+8,Jueves,1,08:00 am,08:50 am,Gestion de Proyectos
+8,Jueves,2,08:50 am,09:40 am,Gestion de Proyectos
+8,Jueves,3,09:40 am,10:30 am,Gestion de Proyectos
+8,Jueves,4,10:30 am,11:20 am,Administracion de Servidores
+8,Jueves,5,11:20 am,12:10 pm,Administracion de Servidores
+8,Jueves,6,12:10 pm,13:00 pm,Administracion de Servidores
+8,Jueves,7,13:00 pm,13:50 pm,libre
+8,Jueves,8,14:30 pm,15:20 pm,Desarrollo Web en Entorno Servidor
+8,Jueves,9,15:20 pm,16:10 pm,Desarrollo Web en Entorno Servidor
+8,Jueves,10,16:10 pm,17:00 pm,Desarrollo Web en Entorno Servidor
+8,Jueves,11,17:00 pm,17:50 pm,Desarrollo Web en Entorno Servidor
+8,Jueves,12,17:50 pm,18:40 pm,Desarrollo Web en Entorno Servidor
+8,Viernes,1,08:00 am,08:50 am,Mercadotecnia
+8,Viernes,2,08:50 am,09:40 am,Mercadotecnia
+8,Viernes,3,09:40 am,10:30 am,Mercadotecnia
+8,Viernes,4,10:30 am,11:20 am,Desarrollo de Soluciones I
+8,Viernes,5,11:20 am,12:10 pm,Desarrollo de Soluciones I
+8,Viernes,6,12:10 pm,13:00 pm,libre
+8,Viernes,7,13:00 pm,13:50 pm,libre
+8,Viernes,8,14:30 pm,15:20 pm,Desarrollo Web en Entorno Servidor
+8,Viernes,9,15:20 pm,16:10 pm,Desarrollo Web en Entorno Servidor
+8,Viernes,10,16:10 pm,17:00 pm,Desarrollo Web en Entorno Servidor
+8,Viernes,11,17:00 pm,17:50 pm,Desarrollo Web en Entorno Servidor
+7,Lunes,1,08:00 am,08:50 am,Comunicaciones y Enrutamiento de Redes
+7,Lunes,2,08:50 am,09:40 am,Comunicaciones y Enrutamiento de Redes
+7,Lunes,3,09:40 am,10:30 am,Ingenieria de Software II
+7,Lunes,4,10:30 am,11:20 am,Ingenieria de Software II
+7,Lunes,5,11:20 am,12:10 pm,Ingenieria de Software II
+7,Lunes,6,12:10 pm,13:00 pm,Ingenieria de Software II
+7,Lunes,7,13:00 pm,13:50 pm,libre
+7,Lunes,8,14:30 pm,15:20 pm,Redes de Computadoras I
+7,Lunes,9,15:20 pm,16:10 pm,Redes de Computadoras I
+7,Lunes,10,16:10 pm,17:00 pm,Diseño de Lenguaje de Programacion
+7,Lunes,11,17:00 pm,17:50 pm,Diseño de Lenguaje de Programacion
+7,Lunes,12,17:50 pm,18:40 pm,Diseño de Lenguaje de Programacion
+7,Lunes,13,18:40 pm,19:30 pm,Diseño de Lenguaje de Programacion
+7,Lunes,14,19:30 pm,20:20 pm,Metodologías Ágiles de Desarrollo de Software
+7,Lunes,15,20:20 pm,21:10 pm,Metodologías Ágiles de Desarrollo de Software
+7,Lunes,16,21:10 pm,22:00 pm,Metodologías Ágiles de Desarrollo de Software
+7,Martes,1,08:00 am,08:50 am,Redes de Computadoras I
+7,Martes,2,08:50 am,09:40 am,Redes de Computadoras I
+7,Martes,3,09:40 am,10:30 am,Redes de Computadoras I
+7,Martes,4,10:30 am,11:20 am,Redes de Computadoras I
+7,Martes,5,11:20 am,12:10 pm,Inteligencia de Negocios
+7,Martes,6,12:10 pm,13:00 pm,Inteligencia de Negocios
+7,Martes,7,13:00 pm,13:50 pm,libre
+7,Martes,8,14:30 pm,15:20 pm,Planeamiento y Direccion Estrategica
+7,Martes,9,15:20 pm,16:10 pm,Planeamiento y Direccion Estrategica
+7,Martes,10,16:10 pm,17:00 pm,Planeamiento y Direccion Estrategica
+7,Martes,11,17:00 pm,17:50 pm,Ingenieria de Software II
+7,Martes,12,17:50 pm,18:40 pm,Ingenieria de Software II
+7,Martes,13,18:40 pm,19:30 pm,Ingenieria de Software II
+7,Martes,14,19:30 pm,20:20 pm,Ingenieria de Software II
+7,Martes,15,20:20 pm,21:10 pm,Ingenieria de Software II
+7,Martes,16,21:10 pm,22:00 pm,Ingenieria de Software II
+7,Miércoles,1,08:00 am,08:50 am,Redes de Computadoras I
+7,Miércoles,2,08:50 am,09:40 am,Redes de Computadoras I
+7,Miércoles,3,09:40 am,10:30 am,Redes de Computadoras I
+7,Miércoles,4,10:30 am,11:20 am,Redes de Computadoras I
+7,Miércoles,5,11:20 am,12:10 pm,Desarrollo Web en Entorno Cliente
+7,Miércoles,6,12:10 pm,13:00 pm,Desarrollo Web en Entorno Cliente
+7,Miércoles,7,13:00 pm,13:50 pm,libre
+7,Miércoles,8,14:30 pm,15:20 pm,libre
+7,Miércoles,9,15:20 pm,16:10 pm,libre
+7,Miércoles,10,16:10 pm,17:00 pm,libre
+7,Miércoles,11,17:00 pm,17:50 pm,Ingenieria de Software II
+7,Miércoles,12,17:50 pm,18:40 pm,Ingenieria de Software II
+7,Miércoles,13,18:40 pm,19:30 pm,Ingenieria de Software II
+7,Miércoles,14,19:30 pm,20:20 pm,Ingenieria de Software II
+7,Jueves,1,08:00 am,08:50 am,Comunicaciones y Enrutamiento de Redes
+7,Jueves,2,08:50 am,09:40 am,Comunicaciones y Enrutamiento de Redes
+7,Jueves,3,09:40 am,10:30 am,Comunicaciones y Enrutamiento de Redes
+7,Jueves,4,10:30 am,11:20 am,Planeamiento y Direccion Estrategica
+7,Jueves,5,11:20 am,12:10 pm,Planeamiento y Direccion Estrategica
+7,Jueves,6,12:10 pm,13:00 pm,libre
+7,Jueves,7,13:00 pm,13:50 pm,libre
+7,Jueves,8,14:30 pm,15:20 pm,Desarrollo Web en Entorno Cliente
+7,Jueves,9,15:20 pm,16:10 pm,Desarrollo Web en Entorno Cliente
+7,Jueves,10,16:10 pm,17:00 pm,Desarrollo Web en Entorno Cliente
+7,Jueves,11,17:00 pm,17:50 pm,Administracion Financiera
+7,Jueves,12,17:50 pm,18:40 pm,Administracion Financiera
+7,Jueves,13,18:40 pm,19:30 pm,Administracion Financiera
+7,Jueves,14,19:30 pm,20:20 pm,Administracion Financiera
+7,Jueves,15,20:20 pm,21:10 pm,Administracion Financiera
+7,Viernes,1,08:00 am,08:50 am,Inteligencia de Negocios
+7,Viernes,2,08:50 am,09:40 am,Inteligencia de Negocios
+7,Viernes,3,09:40 am,10:30 am,Inteligencia de Negocios
+7,Viernes,4,10:30 am,11:20 am,libre
+7,Viernes,5,11:20 am,12:10 pm,Diseño de Lenguaje de Programacion
+7,Viernes,6,12:10 pm,13:00 pm,Diseño de Lenguaje de Programacion
+7,Viernes,7,13:00 pm,13:50 pm,libre
+7,Viernes,8,14:30 pm,15:20 pm,Metodologías Ágiles de Desarrollo de Software
+7,Viernes,9,15:20 pm,16:10 pm,Metodologías Ágiles de Desarrollo de Software
+7,Viernes,10,16:10 pm,17:00 pm,Administracion Financiera
+7,Viernes,11,17:00 pm,17:50 pm,Administracion Financiera
+7,Viernes,12,17:50 pm,18:40 pm,Administracion Financiera
+7,Viernes,13,18:40 pm,19:30 pm,Administracion Financiera
+
+6,Lunes,1,08:00 am,08:50 am,Ingenieria de Software I
+6,Lunes,2,08:50 am,09:40 am,Ingenieria de Software I
+6,Lunes,3,09:40 am,10:30 am,Ingenieria de Software I
+6,Lunes,4,10:30 am,11:20 am,Ingenieria de Software I
+6,Lunes,5,11:20 am,12:10 pm,libre
+6,Lunes,6,12:10 pm,13:00 pm,libre
+6,Lunes,7,13:00 pm,13:50 pm,libre
+6,Lunes,8,14:30 pm,15:20 pm,Herramientas Tecnologicas para la Mineria
+6,Lunes,9,15:20 pm,16:10 pm,Herramientas Tecnologicas para la Mineria
+6,Lunes,10,16:10 pm,17:00 pm,Herramientas Tecnologicas para la Mineria
+6,Lunes,11,17:00 pm,17:50 pm,Herramientas Tecnologicas para la Mineria
+6,Martes,1,08:00 am,08:50 am,Ingenieria de Software I
+6,Martes,2,08:50 am,09:40 am,Comportamiento y Desarrollo Organizacional
+6,Martes,3,09:40 am,10:30 am,Comportamiento y Desarrollo Organizacional
+6,Martes,4,10:30 am,11:20 am,Comportamiento y Desarrollo Organizacional
+6,Martes,5,11:20 am,12:10 pm,Sistema de Bases II
+6,Martes,6,12:10 pm,13:00 pm,Sistema de Bases II
+6,Martes,7,13:00 pm,13:50 pm,libre
+6,Martes,8,14:30 pm,15:20 pm,Herramientas Tecnologicas para la Mineria
+6,Martes,9,15:20 pm,16:10 pm,Herramientas Tecnologicas para la Mineria
+6,Martes,10,16:10 pm,17:00 pm,Herramientas Tecnologicas para la Mineria
+6,Martes,11,17:00 pm,17:50 pm,Herramientas Tecnologicas para la Mineria
+6,Martes,12,17:50 pm,18:40 pm,Herramientas Tecnologicas para la Mineria
+6,Martes,13,18:40 pm,19:30 pm,Simulacion
+6,Martes,14,19:30 pm,20:20 pm,Simulacion
+6,Miércoles,1,08:00 am,08:50 am,Ingenieria de Software I
+6,Miércoles,2,08:50 am,09:40 am,Ingenieria de Software I
+6,Miércoles,3,09:40 am,10:30 am,Ingenieria de Software I
+6,Miércoles,4,10:30 am,11:20 am,Simulacion
+6,Miércoles,5,11:20 am,12:10 pm,Simulacion
+6,Miércoles,6,12:10 pm,13:00 pm,Simulacion
+6,Miércoles,7,13:00 pm,13:50 pm,libre
+6,Jueves,1,08:00 am,08:50 am,Sistema de Bases II
+6,Jueves,2,08:50 am,09:40 am,Sistema de Bases II
+6,Jueves,3,09:40 am,10:30 am,Sistema de Bases II
+6,Jueves,4,10:30 am,11:20 am,Sistema de Bases II
+6,Jueves,5,11:20 am,12:10 pm,Comportamiento y Desarrollo Organizacional
+6,Jueves,6,12:10 pm,13:00 pm,Comportamiento y Desarrollo Organizacional
+6,Jueves,7,13:00 pm,13:50 pm,libre
+6,Jueves,8,14:30 pm,15:20 pm,Sistemas Operativos
+6,Jueves,9,15:20 pm,16:10 pm,Sistemas Operativos
+6,Jueves,10,16:10 pm,17:00 pm,Sistemas Operativos
+6,Jueves,11,17:00 pm,17:50 pm,Sistemas Operativos
+6,Jueves,12,17:50 pm,18:40 pm,Sistemas Operativos
+6,Jueves,13,18:40 pm,19:30 pm,Gestion de la Cadena de Suministro
+6,Jueves,14,19:30 pm,20:20 pm,Gestion de la Cadena de Suministro
+6,Jueves,15,20:20 pm,21:10 pm,Gestion de la Cadena de Suministro
+6,Jueves,16,21:10 pm,22:00 pm,Gestion de la Cadena de Suministro
+6,Jueves,17,22:00 pm,22:50 pm,Gestion de la Cadena de Suministro
+6,Viernes,1,08:00 am,08:50 am,Gestion de la Cadena de Suministro
+6,Viernes,2,08:50 am,09:40 am,Gestion de la Cadena de Suministro
+6,Viernes,3,09:40 am,10:30 am,Gestion de la Cadena de Suministro
+6,Viernes,4,10:30 am,11:20 am,Gestion de la Cadena de Suministro
+6,Viernes,5,11:20 am,12:10 pm,Ingenieria de Software I
+6,Viernes,6,12:10 pm,13:00 pm,Ingenieria de Software I
+6,Viernes,7,13:00 pm,13:50 pm,libre
+6,Viernes,8,14:30 pm,15:20 pm,Sistemas Operativos
+6,Viernes,9,15:20 pm,16:10 pm,Sistemas Operativos
+6,Viernes,10,16:10 pm,17:00 pm,Sistemas Operativos
+6,Viernes,11,17:00 pm,17:50 pm,Sistemas Operativos
+6,Viernes,12,17:50 pm,18:40 pm,Sistemas Operativos
+6,Viernes,13,18:40 pm,19:30 pm,Sistema de Bases II
+6,Viernes,14,19:30 pm,20:20 pm,Sistema de Bases II
+6,Viernes,15,20:20 pm,21:10 pm,Sistema de Bases II
+6,Viernes,16,21:10 pm,22:00 pm,Sistema de Bases II
+
+5,Lunes,1,08:00 am,08:50 am,Administracion y Calidad Total
+5,Lunes,2,08:50 am,09:40 am,Administracion y Calidad Total
+5,Lunes,3,09:40 am,10:30 am,Contabilidad y Costos
+5,Lunes,4,10:30 am,11:20 am,Contabilidad y Costos
+5,Lunes,5,11:20 am,12:10 pm,Contabilidad y Costos
+5,Lunes,6,12:10 pm,13:00 pm,Contabilidad y Costos
+5,Lunes,7,13:00 pm,13:50 pm,libre
+5,Lunes,8,14:30 pm,15:20 pm,Electronica II
+5,Lunes,9,15:20 pm,16:10 pm,Electronica II
+5,Lunes,10,16:10 pm,17:00 pm,Electronica II
+5,Lunes,11,17:00 pm,17:50 pm,Electronica II
+5,Lunes,12,17:50 pm,18:40 pm,Electronica II
+5,Martes,1,08:00 am,08:50 am,Administracion y Calidad Total
+5,Martes,2,08:50 am,09:40 am,Administracion y Calidad Total
+5,Martes,3,09:40 am,10:30 am,Administracion y Calidad Total
+5,Martes,4,10:30 am,11:20 am,Contabilidad y Costos
+5,Martes,5,11:20 am,12:10 pm,Contabilidad y Costos
+5,Martes,6,12:10 pm,13:00 pm,Contabilidad y Costos
+5,Martes,7,13:00 pm,13:50 pm,libre
+5,Martes,8,14:30 pm,15:20 pm,Investigacion de Operaciones II
+5,Martes,9,15:20 pm,16:10 pm,Investigacion de Operaciones II
+5,Martes,10,16:10 pm,17:00 pm,Investigacion de Operaciones II
+5,Martes,11,17:00 pm,17:50 pm,Electronica II
+5,Martes,12,17:50 pm,18:40 pm,Electronica II
+5,Martes,13,18:40 pm,19:30 pm,Electronica II
+5,Martes,14,19:30 pm,20:20 pm,Electronica II
+5,Miércoles,1,08:00 am,08:50 am,Sistemas de Bases I
+5,Miércoles,2,08:50 am,09:40 am,Sistemas de Bases I
+5,Miércoles,3,09:40 am,10:30 am,Sistemas de Bases I
+5,Miércoles,4,10:30 am,11:20 am,Sistemas de Bases I
+5,Miércoles,5,11:20 am,12:10 pm,Contabilidad y Costos
+5,Miércoles,6,12:10 pm,13:00 pm,Contabilidad y Costos
+5,Miércoles,7,13:00 pm,13:50 pm,libre
+5,Miércoles,8,14:30 pm,15:20 pm,Contabilidad y Costos
+5,Jueves,1,08:00 am,08:50 am,Investigacion de Operaciones II
+5,Jueves,2,08:50 am,09:40 am,Investigacion de Operaciones II
+5,Jueves,3,09:40 am,10:30 am,Teoria de Sistemas
+5,Jueves,4,10:30 am,11:20 am,Teoria de Sistemas
+5,Jueves,5,11:20 am,12:10 pm,Teoria de Sistemas
+5,Jueves,6,12:10 pm,13:00 pm,Teoria de Sistemas
+5,Jueves,7,13:00 pm,13:50 pm,libre
+5,Jueves,8,14:30 pm,15:20 pm,Arquitectura del Computador
+5,Jueves,9,15:20 pm,16:10 pm,Arquitectura del Computador
+5,Jueves,10,16:10 pm,17:00 pm,Arquitectura del Computador
+5,Jueves,11,17:00 pm,17:50 pm,Sistemas de Bases I
+5,Jueves,12,17:50 pm,18:40 pm,Sistemas de Bases I
+5,Viernes,1,08:00 am,08:50 am,Teoria de Sistemas
+5,Viernes,2,08:50 am,09:40 am,Teoria de Sistemas
+5,Viernes,3,09:40 am,10:30 am,Arquitectura del Computador
+5,Viernes,4,10:30 am,11:20 am,Arquitectura del Computador
+5,Viernes,5,11:20 am,12:10 pm,Arquitectura del Computador
+5,Viernes,6,12:10 pm,13:00 pm,Arquitectura del Computador
+5,Viernes,7,13:00 pm,13:50 pm,libre
+5,Viernes,8,14:30 pm,15:20 pm,Arquitectura del Computador
+5,Viernes,9,15:20 pm,16:10 pm,Arquitectura del Computador
+
+4,Lunes,1,08:00 am,08:50 am,Metodología de la Investigación Científica
+4,Lunes,2,08:50 am,09:40 am,Metodología de la Investigación Científica
+4,Lunes,3,09:40 am,10:30 am,Inferencia Estadistica
+4,Lunes,4,10:30 am,11:20 am,Inferencia Estadistica
+4,Lunes,5,11:20 am,12:10 pm,Inferencia Estadistica
+4,Lunes,6,12:10 pm,13:00 pm,Inferencia Estadistica
+4,Lunes,7,13:00 pm,13:50 pm,libre
+4,Lunes,8,14:30 pm,15:20 pm,Economia
+4,Lunes,9,15:20 pm,16:10 pm,Economia
+4,Lunes,10,16:10 pm,17:00 pm,Electronica I
+4,Lunes,11,17:00 pm,17:50 pm,Electronica I
+4,Lunes,12,17:50 pm,18:40 pm,Electronica I
+4,Lunes,13,18:40 pm,19:30 pm,Electronica I
+4,Martes,1,08:00 am,08:50 am,Teoria de la Computacion
+4,Martes,2,08:50 am,09:40 am,Teoria de la Computacion
+4,Martes,3,09:40 am,10:30 am,Teoria de la Computacion
+4,Martes,4,10:30 am,11:20 am,Economia
+4,Martes,5,11:20 am,12:10 pm,Economia
+4,Martes,6,12:10 pm,13:00 pm,Economia
+4,Martes,7,13:00 pm,13:50 pm,libre
+4,Martes,8,14:30 pm,15:20 pm,Matematica Discreta
+4,Martes,9,15:20 pm,16:10 pm,Matematica Discreta
+4,Martes,10,16:10 pm,17:00 pm,Matematica Discreta
+4,Martes,11,17:00 pm,17:50 pm,Matematica Discreta
+4,Martes,12,17:50 pm,18:40 pm,Matematica Discreta
+4,Miércoles,1,08:00 am,08:50 am,Investigacion de Operaciones I
+4,Miércoles,2,08:50 am,09:40 am,Investigacion de Operaciones I
+4,Miércoles,3,09:40 am,10:30 am,Investigacion de Operaciones I
+4,Miércoles,4,10:30 am,11:20 am,Metodología de la Investigación Científica
+4,Miércoles,5,11:20 am,12:10 pm,Metodología de la Investigación Científica
+4,Miércoles,6,12:10 pm,13:00 pm,Metodología de la Investigación Científica
+4,Jueves,1,08:00 am,08:50 am,Investigacion de Operaciones I
+4,Jueves,2,08:50 am,09:40 am,Investigacion de Operaciones I
+4,Jueves,3,09:40 am,10:30 am,Investigacion de Operaciones I
+4,Jueves,4,10:30 am,11:20 am,Teoria de la Computacion
+4,Jueves,5,11:20 am,12:10 pm,Teoria de la Computacion
+4,Jueves,6,12:10 pm,13:00 pm,libre
+4,Jueves,7,13:00 pm,13:50 pm,libre
+4,Jueves,8,14:30 pm,15:20 pm,Matematica Discreta
+4,Jueves,9,15:20 pm,16:10 pm,Matematica Discreta
+4,Jueves,10,16:10 pm,17:00 pm,Matematica Discreta
+4,Jueves,11,17:00 pm,17:50 pm,Matematica Discreta
+4,Jueves,12,17:50 pm,18:40 pm,Economia
+4,Jueves,13,18:40 pm,19:30 pm,Economia
+4,Jueves,14,19:30 pm,20:20 pm,Economia
+4,Jueves,15,20:20 pm,21:10 pm,Economia
+4,Viernes,1,08:00 am,08:50 am,Inferencia Estadistica
+4,Viernes,2,08:50 am,09:40 am,Inferencia Estadistica
+4,Viernes,3,09:40 am,10:30 am,Inferencia Estadistica
+4,Viernes,4,10:30 am,11:20 am,Inferencia Estadistica
+4,Viernes,5,11:20 am,12:10 pm,Inferencia Estadistica
+4,Viernes,6,12:10 pm,13:00 pm,libre
+4,Viernes,7,13:00 pm,13:50 pm,libre
+4,Viernes,8,14:30 pm,15:20 pm,Electronica I
+4,Viernes,9,15:20 pm,16:10 pm,Electronica I
+4,Viernes,10,16:10 pm,17:00 pm,Electronica I
+4,Viernes,11,17:00 pm,17:50 pm,Electronica I
+4,Viernes,12,17:50 pm,18:40 pm,Electronica I
+
+3,Lunes,1,08:00 am,08:50 am,libre
+3,Lunes,2,08:50 am,09:40 am,libre
+3,Lunes,3,09:40 am,10:30 am,Fisica I
+3,Lunes,4,10:30 am,11:20 am,Fisica I
+3,Lunes,5,11:20 am,12:10 pm,Fisica I
+3,Lunes,6,12:10 pm,13:00 pm,Fisica I
+3,Lunes,7,13:00 pm,13:50 pm,libre
+3,Lunes,8,14:30 pm,15:20 pm,libre
+3,Lunes,9,15:20 pm,16:10 pm,libre
+3,Lunes,10,16:10 pm,17:00 pm,libre
+3,Lunes,11,17:00 pm,17:50 pm,libre
+3,Lunes,12,17:50 pm,18:40 pm,libre
+3,Lunes,13,18:40 pm,19:30 pm,Ecologia
+3,Lunes,14,19:30 pm,20:20 pm,Ecologia
+3,Lunes,15,20:20 pm,21:10 pm,Ecologia
+3,Martes,1,08:00 am,08:50 am,Lenguaje de Programacion II
+3,Martes,2,08:50 am,09:40 am,Lenguaje de Programacion II
+3,Martes,3,09:40 am,10:30 am,Lenguaje de Programacion II
+3,Martes,4,10:30 am,11:20 am,Lenguaje de Programacion II
+3,Martes,5,11:20 am,12:10 pm,Educacion Fisica
+3,Martes,6,12:10 pm,13:00 pm,Educacion Fisica
+3,Martes,7,13:00 pm,13:50 pm,libre
+3,Martes,8,14:30 pm,15:20 pm,Calculo Multivariable
+3,Martes,9,15:20 pm,16:10 pm,Fisica I
+3,Martes,10,16:10 pm,17:00 pm,Fisica I
+3,Martes,11,17:00 pm,17:50 pm,Fisica I
+3,Martes,12,17:50 pm,18:40 pm,Fisica I
+3,Miércoles,1,08:00 am,08:50 am,Calculo Multivariable
+3,Miércoles,2,08:50 am,09:40 am,Calculo Multivariable
+3,Miércoles,3,09:40 am,10:30 am,Calculo Multivariable
+3,Miércoles,4,10:30 am,11:20 am,Calculo Multivariable
+3,Miércoles,5,11:20 am,12:10 pm,Matematica Basica II
+3,Miércoles,6,12:10 pm,13:00 pm,Matematica Basica II
+3,Jueves,1,08:00 am,08:50 am,Calculo Multivariable
+3,Jueves,2,08:50 am,09:40 am,Calculo Multivariable
+3,Jueves,3,09:40 am,10:30 am,Calculo Multivariable
+3,Jueves,4,10:30 am,11:20 am,Calculo Multivariable
+3,Jueves,5,11:20 am,12:10 pm,Lenguaje de Programacion II
+3,Jueves,6,12:10 pm,13:00 pm,Lenguaje de Programacion II
+3,Jueves,7,13:00 pm,13:50 pm,libre
+3,Jueves,8,14:30 pm,15:20 pm,Matematica Basica II
+3,Jueves,9,15:20 pm,16:10 pm,Matematica Basica II
+3,Jueves,10,16:10 pm,17:00 pm,Matematica Basica II
+3,Jueves,11,17:00 pm,17:50 pm,Matematica Basica II
+3,Jueves,12,17:50 pm,18:40 pm,Ecologia
+3,Jueves,13,18:40 pm,19:30 pm,Ecologia
+3,Jueves,14,19:30 pm,20:20 pm,Fisica I
+3,Jueves,15,20:20 pm,21:10 pm,Fisica I
+3,Viernes,1,08:00 am,08:50 am,libre
+3,Viernes,2,08:50 am,09:40 am,libre
+3,Viernes,3,09:40 am,10:30 am,Matematica Basica II
+3,Viernes,4,10:30 am,11:20 am,Matematica Basica II
+3,Viernes,5,11:20 am,12:10 pm,Matematica Basica II
+3,Viernes,6,12:10 pm,13:00 pm,Matematica Basica II
+3,Viernes,7,13:00 pm,13:50 pm,libre
+3,Viernes,8,14:30 pm,15:20 pm,Lenguaje de Programacion II
+3,Viernes,9,15:20 pm,16:10 pm,Lenguaje de Programacion II
+3,Viernes,10,16:10 pm,17:00 pm,Lenguaje de Programacion II
+3,Viernes,11,17:00 pm,17:50 pm,Lenguaje de Programacion II
+
+2,Lunes,1,08:00 am,08:50 am,Métodos de Estudio del Trabajo Universitario
+2,Lunes,2,08:50 am,09:40 am,Métodos de Estudio del Trabajo Universitario
+2,Lunes,3,09:40 am,10:30 am,Métodos de Estudio del Trabajo Universitario
+2,Lunes,4,10:30 am,11:20 am,Métodos de Estudio del Trabajo Universitario
+2,Lunes,5,11:20 am,12:10 pm,Cálculo Integral
+2,Lunes,6,12:10 pm,13:00 pm,Cálculo Integral
+2,Lunes,7,13:00 pm,13:50 pm,libre
+2,Lunes,8,14:30 pm,15:20 pm,Taller de arte: Danza
+2,Lunes,9,15:20 pm,16:10 pm,Taller de arte: Danza
+2,Lunes,10,16:10 pm,17:00 pm,Cálculo Integral
+2,Lunes,11,17:00 pm,17:50 pm,Cálculo Integral
+2,Lunes,12,17:50 pm,18:40 pm,Cálculo Integral
+2,Martes,1,08:00 am,08:50 am,Cálculo Integral
+2,Martes,2,08:50 am,09:40 am,Cálculo Integral
+2,Martes,3,09:40 am,10:30 am,Cálculo Integral
+2,Martes,4,10:30 am,11:20 am,Estadística General
+2,Martes,5,11:20 am,12:10 pm,Estadística General
+2,Martes,6,12:10 pm,13:00 pm,Estadística General
+2,Martes,7,13:00 pm,13:50 pm,libre
+2,Martes,8,14:30 pm,15:20 pm,Química General
+2,Martes,9,15:20 pm,16:10 pm,Química General
+2,Martes,10,16:10 pm,17:00 pm,Química General
+2,Martes,11,17:00 pm,17:50 pm,Realidad nacional
+2,Martes,12,17:50 pm,18:40 pm,Realidad nacional
+2,Miércoles,1,08:00 am,08:50 am,Lenguaje de Programación I
+2,Miércoles,2,08:50 am,09:40 am,Lenguaje de Programación I
+2,Miércoles,3,09:40 am,10:30 am,Lenguaje de Programación I
+2,Miércoles,4,10:30 am,11:20 am,Lenguaje de Programación I
+2,Miércoles,5,11:20 am,12:10 pm,Cálculo Integral
+2,Miércoles,6,12:10 pm,13:00 pm,Cálculo Integral
+2,Jueves,1,08:00 am,08:50 am,Química General
+2,Jueves,2,08:50 am,09:40 am,Química General
+2,Jueves,3,09:40 am,10:30 am,Química General
+2,Jueves,4,10:30 am,11:20 am,Estadística General
+2,Jueves,5,11:20 am,12:10 pm,Estadística General
+2,Jueves,6,12:10 pm,13:00 pm,Estadística General
+2,Jueves,7,13:00 pm,13:50 pm,libre
+2,Jueves,8,14:30 pm,15:20 pm,Lenguaje de Programación I
+2,Jueves,9,15:20 pm,16:10 pm,Lenguaje de Programación I
+2,Jueves,10,16:10 pm,17:00 pm,Métodos de Estudio del Trabajo Universitario
+2,Jueves,11,17:00 pm,17:50 pm,Métodos de Estudio del Trabajo Universitario
+2,Jueves,12,17:50 pm,18:40 pm,Métodos de Estudio del Trabajo Universitario
+2,Jueves,13,18:40 pm,19:30 pm,Métodos de Estudio del Trabajo Universitario
+2,Viernes,1,08:00 am,08:50 am,Lenguaje de Programación I
+2,Viernes,2,08:50 am,09:40 am,Lenguaje de Programación I
+2,Viernes,3,09:40 am,10:30 am,Lenguaje de Programación I
+2,Viernes,4,10:30 am,11:20 am,Lenguaje de Programación I
+2,Viernes,5,11:20 am,12:10 pm,Cálculo Integral
+2,Viernes,6,12:10 pm,13:00 pm,Cálculo Integral
+2,Viernes,7,13:00 pm,13:50 pm,libre
+2,Viernes,8,14:30 pm,15:20 pm,Cálculo Integral
+2,Viernes,9,15:20 pm,16:10 pm,Cálculo Integral
+
+1,Lunes,1,08:00 am,08:50 am,Matemática Basica
+1,Lunes,2,08:50 am,09:40 am,Matemática Basica
+1,Lunes,3,09:40 am,10:30 am,Comunicación Oral y Escrita
+1,Lunes,4,10:30 am,11:20 am,Comunicación Oral y Escrita
+1,Lunes,5,11:20 am,12:10 pm,Comunicación Oral y Escrita
+1,Lunes,6,12:10 pm,13:00 pm,Comunicación Oral y Escrita
+1,Lunes,7,13:00 pm,13:50 pm,libre
+1,Lunes,8,14:30 pm,15:20 pm,Matemática Superior
+1,Lunes,9,15:20 pm,16:10 pm,Matemática Superior
+1,Lunes,10,16:10 pm,17:00 pm,Cálculo Diferencial
+1,Lunes,11,17:00 pm,17:50 pm,Cálculo Diferencial
+1,Lunes,12,17:50 pm,18:40 pm,Física General
+1,Lunes,13,18:40 pm,19:30 pm,Física General
+1,Lunes,14,19:30 pm,20:20 pm,Física General
+1,Lunes,15,20:20 pm,21:10 pm,Física General
+1,Martes,1,08:00 am,08:50 am,Cálculo Diferencial
+1,Martes,2,08:50 am,09:40 am,Cálculo Diferencial
+1,Martes,3,09:40 am,10:30 am,Cálculo Diferencial
+1,Martes,4,10:30 am,11:20 am,Matemática Superior
+1,Martes,5,11:20 am,12:10 pm,Matemática Superior
+1,Martes,6,12:10 pm,13:00 pm,Matemática Superior
+1,Martes,7,13:00 pm,13:50 pm,libre
+1,Martes,8,14:30 pm,15:20 pm,Introducción a los Algoritmos
+1,Martes,9,15:20 pm,16:10 pm,Introducción a los Algoritmos
+1,Martes,10,16:10 pm,17:00 pm,Introducción a los Algoritmos
+1,Martes,11,17:00 pm,17:50 pm,Introducción a los Algoritmos
+1,Martes,12,17:50 pm,18:40 pm,Introducción a los Algoritmos
+1,Miércoles,1,08:00 am,08:50 am,Matemática Basica
+1,Miércoles,2,08:50 am,09:40 am,Matemática Basica
+1,Miércoles,3,09:40 am,10:30 am,Matemática Basica
+1,Miércoles,4,10:30 am,11:20 am,Matemática Basica
+1,Miércoles,5,11:20 am,12:10 pm,Matemática Superior
+1,Miércoles,6,12:10 pm,13:00 pm,Matemática Superior
+1,Jueves,1,08:00 am,08:50 am,Cálculo Diferencial
+1,Jueves,2,08:50 am,09:40 am,Cálculo Diferencial
+1,Jueves,3,09:40 am,10:30 am,Cálculo Diferencial
+1,Jueves,4,10:30 am,11:20 am,Cálculo Diferencial
+1,Jueves,5,11:20 am,12:10 pm,Comunicación Oral y Escrita
+1,Jueves,6,12:10 pm,13:00 pm,Comunicación Oral y Escrita
+1,Jueves,7,13:00 pm,13:50 pm,libre
+1,Jueves,8,14:30 pm,15:20 pm,Introducción a los Algoritmos
+1,Jueves,9,15:20 pm,16:10 pm,Introducción a los Algoritmos
+1,Jueves,10,16:10 pm,17:00 pm,Introducción a los Algoritmos
+1,Jueves,11,17:00 pm,17:50 pm,Introducción a los Algoritmos
+1,Jueves,12,17:50 pm,18:40 pm,Física General
+1,Jueves,13,18:40 pm,19:30 pm,Física General
+1,Jueves,14,19:30 pm,20:20 pm,Física General
+1,Jueves,15,20:20 pm,21:10 pm,Física General
+1,Viernes,1,08:00 am,08:50 am,Introducción a los Algoritmos
+1,Viernes,2,08:50 am,09:40 am,Introducción a los Algoritmos
+1,Viernes,3,09:40 am,10:30 am,Introducción a los Algoritmos
+1,Viernes,4,10:30 am,11:20 am,Introducción a los Algoritmos
+1,Viernes,5,11:20 am,12:10 pm,Comunicación Oral y Escrita
+1,Viernes,6,12:10 pm,13:00 pm,Comunicación Oral y Escrita
+1,Viernes,7,13:00 pm,13:50 pm,libre
+1,Viernes,8,14:30 pm,15:20 pm,Matemática Basica
+1,Viernes,9,15:20 pm,16:10 pm,Matemática Basica
+1,Viernes,10,16:10 pm,17:00 pm,Matemática Basica
+1,Viernes,11,17:00 pm,17:50 pm,Matemática Basica`;
